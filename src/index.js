@@ -50,7 +50,7 @@ ${contacto.contenido}
   res.write(
     `
     ----------------------------------------
-Titulo:  ${movie.title} 
+Titulo:  ${movie.title} \n
 Reseña: ${movie.overview}
     -----------------------------------------
             `
