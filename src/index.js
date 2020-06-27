@@ -47,16 +47,14 @@ ${contacto.contenido}
    let titulos = cartelera.listarPelis();
    res.write("total de peliculas: "+ cartelera.cantidad() + "\n"+"\n")
    titulos.forEach(function(movie){
-    res.write("\n")
-    res.write("---------------------------------------------------")
-    res.write("\n")
-    res.write(movie.title)
-    res.write("\n")
-    res.write("\n")
-    res.write(movie.overview)
-    res.write("\n")
-    res.write("---------------------------------------------------")
-    res.write("\n")
+  res.write(
+    `
+    ----------------------------------------
+Titulo:  ${movie.title} 
+Reseña: ${movie.overview}
+    -----------------------------------------
+            `
+  )
    })   
    },
 
