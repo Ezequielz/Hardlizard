@@ -41,7 +41,7 @@ ${contacto.contenido}
    res.end()
    },
 
-   ///////////////////////////////  CARTELERA  /////////////////////////////////////
+   ////////////////////////////////  CARTELERA  /////////////////////////////////////
    enCartelera: function(res){
    res.write(cartelera.titulo)
    let titulos = cartelera.listarPelis();
@@ -98,7 +98,7 @@ Respuesta: ${faq.faq_answer}
        })
 res.end()
    },
-   
+
    ///////////////////////////////  SUCURSALES  /////////////////////////////////////
    sucursales: function(res){
        res.write(sucursales.titulo)
