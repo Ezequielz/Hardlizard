@@ -21,7 +21,7 @@ switch(url){
         index.sucursales(res);
         break
     default:
-        "404 not found"
+        res.end("404 not found")
 }
 }
 
