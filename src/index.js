@@ -100,7 +100,7 @@ res.end()
    ///////////////////////////////  SUCURSALES  /////////////////////////////////////
    sucursales: function(res){
        res.write(sucursales.titulo)
-       res.write("Total de salas: " + sucursales.cantidad())
+       res.write("Total de cines: " + sucursales.cantidad())
        let salas = sucursales.leerJSON()
        salas.theaters.forEach(function(sala){
            res.write(
@@ -108,7 +108,8 @@ res.end()
             ----------------------------------------
  Nombre: ${sala.name}  \n
  Direccion: ${sala.adress} \n
- Descripcion: ${sala.description}
+ Descripcion: ${sala.description} \n
+ Total de Salas : ${sala.total_rooms}
 
             -----------------------------------------
                     `
